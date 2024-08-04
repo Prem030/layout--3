@@ -2,12 +2,18 @@
     margin:  0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 .bg-text-color{
     background-color: black;
     color: white;
 }
+
+body{
+    background-color: #F1F1F1;
+}
+
 
 /* +++++++++++++++++++++++++++++++++++++++++ nav bar section _++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -33,6 +39,9 @@
     font-size: 1.1rem;    
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald";
+}
 /* ++++++++++++++++++++++++++++++++++++++++++ header section ++++++++++++++++++++++++++++++++++++++++++++ */
 
 
@@ -42,6 +51,7 @@ header{
     margin: auto;
     font-family: "Oswald";
     text-align: center;
+    background-color: white;
 }
 
 .Brand-Name{
@@ -63,6 +73,9 @@ header p{
 .landing-page{
     width: 1600px;
     margin: auto;
+    display: flex;
+    align-items: center;
+
 }
 
 .landing-page img{
@@ -70,12 +83,429 @@ header p{
 }
 
 .container{
-    width: 450px;
-    border: 2px solid black;
-    position: relative;
-    bottom: 200px;
-    background-color: white ;
+    width: 500px;
     
+    padding: 1rem 1rem 1rem 1.5rem;
+    position: absolute;
+}
+
+.container h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: .3rem;
+    font-weight: 400;
+}
+
+.container p{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    font-family: "Oswald";
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: white;
+    
+}
+.button button{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-family: "Oswald";
+    font-size: .5rem;
+    background-color: #a0a0a0b6;
+    font-size: 1.1rem;
+    border: 0px;
+}
+.button button:hover{
+    background-color: #ccc ;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ post-suggestions ++++++++++++++++++++++++++++++++++++++++ */
+
+
+.posts-suggestion{
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 1rem ;
+    background-color: #F1F1F1;
+    border: 1px solid #ccc;
+}
+
+.post{
+    padding:1rem;
+}
+
+.post-card{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles h2{
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.titles p::before{
+    content: "Title description, ";
+    font-size: 18px;
+    color: black;
+}
+
+.titles p{
+    font-size: 18px;
+    font-family: "Oswald";
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+
+.image{
+    padding:1rem 0;
+    margin-bottom: 1rem;
+}
+
+.image-disc img{
+    width: 100%;
+    font-family: "Oswald";
+}
+
+.image-disc p{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Open Sans";
+   
+}
+
+.like-comment{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.like button:hover{
+    background-color: #ccc !important;
+}
+
+.like button{
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #aaa;
+}
+.comments-count{
+    display: flex;
+    padding: .5rem 1rem;
+}
+
+.comments-count p:hover{
+    background-color: #ccc !important;
+}
+
+.comments-count p{
+    display: flex;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    font-family: "Oswald";
+    
+
+}
+.comments-count .count{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: .1rem .7rem;
+    margin-left: 1rem;
+    
+}
+
+.left{
+    width: 67%;
+
+}
+
+.right{
+    width: 33%;
+    font-family: "Open Sans";
+    padding: 1rem;
+}
+
+.intro-container{
+   margin-bottom: 1.5rem;
+    
+}
+
+
+.intro img{
+    width: 100%;
+    filter: grayscale(75%);
+}
+
+.title-discription{
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    background-color: black;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+
+.title-discription h2{
+    margin-bottom: 1rem;
+}
+
+.discription{
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+
+.popular-post-container{
+    margin-bottom: 2rem;
+}
+
+.pp-heading{
+    font-size: 1.5rem ;
+    font-weight: 400;
+    padding: 1.3rem 1rem 1.3rem 1rem ;
+    background-color: black;
+    color: white;
+}
+
+
+
+.pp-card{
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 2px;
+    background-color: white;
+}
+
+.pp-card:hover{
+    background-color: #ccc;
+}
+
+.pp-disc p{
+    margin: .2rem;
+}
+
+.pp-card img{
+    width: 50px;
+    height: 50px;
+    margin-right: .5rem;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++ Advertise +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.advertisement{
+    background-color: white;
+    height: 300px;
+    margin-bottom: 2rem;
+
+    
+}
+
+.heading{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-weight: 400;
+}
+.AD{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.Ad-content{
+    width: 100%;  
+    height: 200px;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* +++++++++++++++++++++++++++++++++ tags +++++++++++++++++++++++++++++++++++++++++++ */
+.tags-container{
+   margin-bottom: 2rem;
+}
+
+.tag-heading{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem ;
+    background-color: black;
+    color: white;
+}
+
+
+
+.tag-links{
+    padding: 1rem;
+    background-color: white;
+}
+
+.tag-links a{
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #F1F1F1;
+    margin: .5rem .2rem;
+    font-size: 15px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++ inspiration-images +++++++++++++++++++++++++++++++++++++++ */
+
+.inspiration-images{
+ background-color: white;
+}
+
+.inspiration{
+    background-color: black;
+    color: white;
+    padding: 1rem ;
+}
+
+.images{
+    padding: 1rem 1rem 1rem 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+}
+.images img{
+    width: 100%;
+    height: fit-content;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++ follow me +++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.follow-me{
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.follow-heading{
+    background-color: black;
+    color:white;
+    padding:1rem;
+    
+}
+
+.follow-me a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2rem;
+
+}
+
+.follow-me .links{
+    padding: 1rem;
+}
+
+.links i{
+    margin: .1rem;
+}
+
+.follow-me a:hover{
+    color: gray;
+
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ subsciribe form +++++++++++++++++++++++++++++++++++++++++ */
+
+.subscribe-form{
+    background-color: white;
+    
+}
+
+.subscribe{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.form{
+    padding: 1rem;
+}
+
+.form p{
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#email{
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#subscribe{
+    padding:.7rem;
+    background-color:#F44336;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+#subscribe:hover{
+    background-color: #ccc;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++ footer ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+footer{
+    background-color: #616161;
+    padding: 2rem 2rem 3rem 2rem ;
+    font-family: "Open Sans";
+}
+
+footer button{
+    padding: .8rem 1.5rem;
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer button:hover{
+    background-color: #ccc;
+    color: black;
+    border: none;
+}
+
+footer button i{
+    margin-right: .5rem;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
 }
 
 
@@ -88,5 +518,40 @@ header p{
 
     .landing-page{
         width: 100%;
+    }
+
+    .posts-suggestion{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:992px){
+    .posts-suggestion{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+
+    .images{
+        grid-template-columns: 1fr 1fr;
+    }
+    .images img{
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media (max-width:600px){
+    .container{
+        width: 200px;
+    }
+    .vanish{
+        display: none;
     }
 }
