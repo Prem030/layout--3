@@ -400,6 +400,11 @@ header p{
     height: fit-content;
 }
 
+.images img:hover{
+    opacity: .8;
+   
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++ follow me +++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .follow-me{
@@ -493,6 +498,7 @@ footer button{
     color: white;
     font-size: 1rem;
     margin-bottom: 2rem;
+    border: none;
 }
 
 footer button:hover{
